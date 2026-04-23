@@ -14,8 +14,16 @@ class TestNumRomaine {
 	}
 
 	@Test
-	void testChiffre1() {
+	void testUn() { //Iter 1
 		assertEquals(num.toChiffresRomains(1), "I");
+	}
+	
+	@Test
+	void testDeuxetTrois() { //Iter 2
+		assertEquals(num.toChiffresRomains(2), "II");
+		assertEquals(num.toChiffresRomains(3), "III");
+		
+		
 	}
 
 }

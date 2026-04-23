@@ -3,11 +3,12 @@ package romains;
 public class ChiffresRomains {
 	
 	public String toChiffresRomains(int nombre) {
-		String numRom = null;
-		if(nombre == 1) {
-			numRom = "I";
+		StringBuilder sb = new StringBuilder();
+		while(nombre > 0) {
+			sb.append("I");
+			nombre--;
 		}
-	return numRom;
+	return sb.toString();
 	}
 
 }
