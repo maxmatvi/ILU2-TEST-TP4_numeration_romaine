@@ -10,10 +10,11 @@ class TestNumRomaine {
 
 	@BeforeEach
 	void setUp() throws Exception {
+		num = new ChiffresRomains();
 	}
 
 	@Test
-	void test() {
+	void testChiffre1() {
 		assertEquals(num.toChiffresRomains(1), "I");
 	}
 
