@@ -31,4 +31,9 @@ class TestNumRomaine {
 		assertThrows(IllegalArgumentException.class, () -> num.toChiffresRomains(4000));
 	}
 
+	@Test
+	void testQuatre() { //Iter 4
+		assertEquals(num.toChiffresRomains(4), "IV");
+	}
+	
 }
