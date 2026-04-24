@@ -19,7 +19,7 @@ class TestNumRomaine {
 	}
 	
 	@Test
-	void testDeuxetTrois() { //Iter 2
+	void testDeuxEtTrois() { //Iter 2
 		assertEquals(num.toChiffresRomains(2), "II");
 		assertEquals(num.toChiffresRomains(3), "III");
 	}
@@ -35,5 +35,16 @@ class TestNumRomaine {
 	void testQuatre() { //Iter 4
 		assertEquals(num.toChiffresRomains(4), "IV");
 	}
+	
+	@Test
+	void testCinqEtAuDela() { //Iter 5
+		assertEquals(num.toChiffresRomains(5), "V");
+		assertEquals(num.toChiffresRomains(6), "VI");
+		assertEquals(num.toChiffresRomains(8), "VIII");
+	}
+	
+	
+	
+	
 	
 }
