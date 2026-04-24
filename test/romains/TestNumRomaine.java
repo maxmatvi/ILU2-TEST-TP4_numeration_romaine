@@ -65,6 +65,15 @@ class TestNumRomaine {
 		assertEquals(num.toChiffresRomains(2000),"MM");
 	}
 	
+	@Test
+	void testFinal() {
+		assertEquals(num.toChiffresRomains(1994),"MCMXCIV");
+		assertEquals(num.toChiffresRomains(2024),"MMXXIV");
+		assertEquals(num.toChiffresRomains(3999),"MMMCMXCIX");
+		assertEquals(num.toChiffresRomains(58),"LVIII");
+		assertEquals(num.toChiffresRomains(648),"DCXLVIII");
+	}
+	
 	
 	
 }
