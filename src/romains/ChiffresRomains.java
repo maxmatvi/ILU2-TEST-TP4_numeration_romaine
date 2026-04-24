@@ -4,6 +4,9 @@ public class ChiffresRomains {
 	
 	public String toChiffresRomains(int nombre) {
 		StringBuilder sb = new StringBuilder();
+		if(nombre<=0 || nombre>3999) {
+			throw new IllegalArgumentException("Le nombre doit être compris entre 1 et 3999.");
+		}
 		while(nombre > 0) {
 			sb.append("I");
 			nombre--;
