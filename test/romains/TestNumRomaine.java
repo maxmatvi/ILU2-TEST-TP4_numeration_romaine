@@ -53,6 +53,12 @@ class TestNumRomaine {
 		assertEquals(num.toChiffresRomains(30), "XXX");
 	}
 	
+	@Test
+	void testMixDeTout() {
+		assertEquals(num.toChiffresRomains(11),"XI");
+		assertEquals(num.toChiffresRomains(34),"XXXIV");
+	}
+	
 	
 	
 	
