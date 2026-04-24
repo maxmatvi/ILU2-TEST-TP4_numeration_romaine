@@ -48,6 +48,11 @@ class TestNumRomaine {
 		assertEquals(num.toChiffresRomains(9), "IX");
 	}
 	
+	@Test
+	void testDizaines(){
+		assertEquals(num.toChiffresRomains(30), "XXX");
+	}
+	
 	
 	
 	
