@@ -11,9 +11,12 @@ public class ChiffresRomains {
 			if(nombre == 4) {
 				sb.append("IV");
 				nombre -= 4;
-			} else if (nombre >= 5) {
+			} else if (nombre >= 5 && nombre < 9) {
 				sb.append("V");
 				nombre -= 5;
+			} else if(nombre == 9) {
+				sb.append("IX");
+				nombre -= 9;
 			} else {
 			sb.append("I");
 			nombre--;

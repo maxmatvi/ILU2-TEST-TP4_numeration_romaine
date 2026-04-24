@@ -43,6 +43,10 @@ class TestNumRomaine {
 		assertEquals(num.toChiffresRomains(8), "VIII");
 	}
 	
+	@Test
+	void testNeuf() {
+		assertEquals(num.toChiffresRomains(9), "IX");
+	}
 	
 	
 	
