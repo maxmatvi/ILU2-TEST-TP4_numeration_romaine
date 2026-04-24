@@ -59,6 +59,11 @@ class TestNumRomaine {
 		assertEquals(num.toChiffresRomains(34),"XXXIV");
 	}
 	
+	@Test
+	void testCentaines() {
+		assertEquals(num.toChiffresRomains(100),"C");
+		assertEquals(num.toChiffresRomains(2000),"MM");
+	}
 	
 	
 	
